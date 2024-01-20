@@ -58,7 +58,7 @@ def Select_Approach(approach:str=None):
             raise Exception('Select an approach in the params json file')
     return f
 
-def SaveResults(result:object=None,filename:str=None):
+def SaveResults(result:object=None,filename:str=None,metnet:object=None):
     space = '\n'
     os.chdir("../")
     
@@ -73,6 +73,14 @@ def SaveResults(result:object=None,filename:str=None):
         outfile.writelines([ko +',' for ko in result.Strategy])
         outfile.write(space)
         
+        outfile.write(f'Chemical ({metnet.Rxn[metnet.chemical]}):  ')
+        outfile.writelines(str(result.Vs[metnet.chemical]))
+        outfile.write(space)
+
+        outfile.write(f'Biomass ({metnet.Rxn[metnet.biomass]}):  ')
+        outfile.writelines(str(result.Vs[metnet.biomass]))
+        outfile.write(space)
+
         outfile.write("Binary_Vector: ")
         outfile.writelines([str(i)+',' for i in result.Ys])
         outfile.write(space)

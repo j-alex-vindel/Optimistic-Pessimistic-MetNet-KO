@@ -22,4 +22,21 @@ SSM is a matrix of size NxM
   - biomass -> referes to the index associated with the cellular growth
   - chemical -> refers to the desired chemical to optimize
  
- 
+ when setting the bacteria object
+
+  '''
+    CB = Bacteria(S=S,LB=lb,UB=ub,Rxn=Rxn,Met=Met,Name='Custom',biomass=biomass,chemical=chemical)
+
+  '''
+   - `S=S` sets the Stoichiometic matrix
+   - `LB=lb` sets  the lower bounds
+   - `Ub=ub` sets the upper bounds
+   - `Rxn=Rxn` sets the naming convention for the reactions
+   - `Met=Met` sets the naming convention of the metabolites
+   - `Name=` this can be changed to any name that identifies the bacteria
+   - `biomass=` sets the cellular growth index
+   - `chemical=` sets the desired chemical index
+   - `KO=KO` sets the vector with potential reactions (indices),by default is set to `None`
+   - `infeas=` sets the infeasibility for the solver, by default is set to `1e-6`
+   - `time_limit=` sets a time limit for the solver, by default is set to `1000` seconds
+   - `BM=` sets the Big M used in the solver to add constraints, by default is set to `1000`
