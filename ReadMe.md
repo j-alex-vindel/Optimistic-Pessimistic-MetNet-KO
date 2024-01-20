@@ -5,9 +5,9 @@ You can use this package to solve the bilevel problem of reaction knockouts in m
 ## Inputs 
 Parameteres for the algorithm -> Check the <params.json>. 
     Use: 
-    - pct_grow -> to set the growth percentage (minimal bacteria growth) to the wildtype "int" between 0-100
-    - K -> the number of allowed Knockouts "int"
-    - Apr -> to distinguish between the optimistic and pessimistic aproach of the solution
+    - pct_grow -> to set the growth percentage (minimal bacteria growth) to the wildtype "int" between 0-100 \
+    - K -> the number of allowed Knockouts "int" \
+    - Apr -> to distinguish between the optimistic and pessimistic aproach of the solution \
     - Bacteria -> to set the bacteria to use for the solution by wrting a text string with the names of the baceria. Otherwise, type in "Custome" for a custome bacteria and set the data in the "Custom_Inputs" folder and custom chemical production.
     - FileName -> The name of the file where the results will be saved. The file is saved in the same folder where params.json and main.py are located.
 

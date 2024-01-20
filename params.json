@@ -1,6 +1,8 @@
 {"pct_grow":50,
  "K":2,
  "Apr":"Optimistic",
+ "__Aproaches__":["Optimistic","Pessimistic"],
  "Bacteria":"iJO1366",
+ "__Bacterias__":["iJO1366","iAF1260","iJR930","Yeast"],
  "FileName":"Results.txt"
 }
