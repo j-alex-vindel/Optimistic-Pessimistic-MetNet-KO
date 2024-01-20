@@ -3,12 +3,12 @@
 You can use this package to solve the bilevel problem of reaction knockouts in metabolic engineering. I implemented an algorithm that exploits the bounds of the variables and adds feasibility cuts and no good cuts to find the best reaction knockout. The package includes data on E. Coli Bacteria, iJO1366, iAF1260, iJR904 and a Yeast Strain that were used to test the algorithm. But, the package also accepts custom bacteria.
 
 ## Inputs 
-Parameteres for the algorithm use the *params.json* file. \
-- **pct_grow** -> to set the growth percentage (minimal bacteria growth) to the wildtype "int" between 0-100. \
-- **K** -> the number of allowed Knockouts "int". \
-- **Apr** -> to distinguish between the optimistic and pessimistic aproach of the solution. \
-- **Bacteria** -> to set the bacteria to use for the solution by wrting a text string with the names of the baceria. Otherwise, type in "Custome" for a custome bacteria and set the data in the "Custom_Inputs" [here] (../Custome_Inputs) folder and custom chemical production. \
-- **FileName** -> The name of the file where the results will be saved. The file is saved in the same folder where params.json and main.py are located. \
+Parameteres for the algorithm use the *params.json* file. 
+- **pct_grow** -> to set the growth percentage (minimal bacteria growth) to the wildtype "int" between 0-100. 
+- **K** -> the number of allowed Knockouts "int". 
+- **Apr** -> to distinguish between the optimistic and pessimistic aproach of the solution. 
+- **Bacteria** -> to set the bacteria to use for the solution by wrting a text string with the names of the baceria. Otherwise, type in "Custome" for a custome bacteria and set the data in the "Custom_Inputs" [here](../Custome_Inputs) folder and custom chemical production. 
+- **FileName** -> The name of the file where the results will be saved. The file is saved in the same folder where params.json and main.py are located. 
 
 ## Outputs
  - The name of the Bacteria.
