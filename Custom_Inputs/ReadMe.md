@@ -24,10 +24,10 @@ SSM is a matrix of size NxM
  
  when setting the bacteria object
 
-  '''
-    CB = Bacteria(S=S,LB=lb,UB=ub,Rxn=Rxn,Met=Met,Name='Custom',biomass=biomass,chemical=chemical)
+  ```
+  CB = Bacteria(S=S,LB=lb,UB=ub,Rxn=Rxn,Met=Met,Name='Custom',biomass=biomass,chemical=chemical)
 
-  '''
+  ```
    - `S=S` sets the Stoichiometic matrix
    - `LB=lb` sets  the lower bounds
    - `Ub=ub` sets the upper bounds
