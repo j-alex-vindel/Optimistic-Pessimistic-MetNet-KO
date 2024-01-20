@@ -19,3 +19,5 @@ Parameteres for the algorithm -> Check the <params.json>.
  - The biomass (cellular growth) for the mutant bacteria
  - The Binary vector that corresponds with the allowed reactions in the metabolic network (y=1) and the reaction knockouts (y=0)
  - The mass flow, that is the vector with the reactions' mass flow 
+
+ ### For a seamless work and no need for a major code modification keep the naming convention
