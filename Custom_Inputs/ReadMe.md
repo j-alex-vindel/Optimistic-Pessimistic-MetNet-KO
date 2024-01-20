@@ -5,6 +5,6 @@ Please use the file and naming convetion
 ## Data:
     - LB -> The reactions' lower bounds <LB.txt>
     - UB -> The reactions' upper bounds <UB.txt>
-    - Met -> The reactions Stoichiometric matrix <Met.txt>
-    - Rxn -> The reactions names' or ids 
-    - Met -> The metabolites names or ids
+    - SSM -> The reactions Stoichiometric matrix <Met.txt>
+    - Rxn -> The reactions names' or ids <Rxn.txt>
+    - Met -> The metabolites names or ids <Met.txt>
