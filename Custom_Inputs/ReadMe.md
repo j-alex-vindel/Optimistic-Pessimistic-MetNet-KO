@@ -1,13 +1,13 @@
 # Custom Inputs for a Metabolic Network
 
-Please use the file <custom_Baceria.py> to modify the bacteria.
+Please use the file [*custom_Baceria.py*](../Custom_Inputs/Custom_Bacteria.py) to modify the bacteria.
 
 ## Data:
-    - LB -> The reactions' lower bounds <LB.txt>
-    - UB -> The reactions' upper bounds <UB.txt>
-    - SSM -> The reactions Stoichiometric matrix <Met.txt>
-    - Rxn -> The reactions names' or ids <Rxn.txt>
-    - Met -> The metabolites names or ids <Met.txt>
+- LB  The reactions' lower bounds [*LB.txt*](../Custom_Inputs/LB.txt)
+- UB  The reactions' upper bounds [*UB.txt*](../Custom_Inputs/UB.txt)
+- SSM The reactions Stoichiometric matrix [*SSM.txt*](../Custom_Inputs/SSM.txt)
+- Rxn The reactions names' or ids [*Rxn.txt*](../Custom_Inputs/Rxn.txt)
+- Met The metabolites names or ids [*Met.txt*](../Custom_Inputs/Met.txt)
 
 LB,UB and Rxn are vectors of size M
 Met is a vector of size N
