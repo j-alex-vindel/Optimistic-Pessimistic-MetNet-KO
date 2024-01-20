@@ -1,6 +1,6 @@
 # Custom Inputs for a Metabolic Network
 
-Please use the file [*custom_Baceria.py*](../Custom_Inputs/Custom_Bacteria.py) to modify the bacteria.
+Please use the file [*Custom_Bacteria.py*](../Custom_Inputs/Custom_Bacteria.py) to modify the bacteria.
 
 ## Data:
 - LB  The reactions' lower bounds [*LB.txt*](../Custom_Inputs/LB.txt)
