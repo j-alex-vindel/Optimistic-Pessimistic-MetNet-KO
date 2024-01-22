@@ -46,13 +46,11 @@ def bacteriaselector(bacteria:str=None):
 
 
 def Select_Approach(approach:str=None):
-
+    from Algorithms.Approaches import A_Optimistic,A_Pessimistic
     match approach:
         case 'optimistic':
-            from Algorithms.Optimistic import A_Optimistic
             f = A_Optimistic
         case 'pessimistic':
-            from Algorithms.Pessimistic import A_Pessimistic
             f = A_Pessimistic
         case _:
             raise Exception('Select an approach in the params json file')
