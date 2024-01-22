@@ -19,7 +19,7 @@ Parameteres for the algorithm use the [*params.json*](../main/params.json) file.
  - The binary vector that corresponds with the allowed reactions in the metabolic network (y=1) and the reaction knockouts (y=0).
  - The mass flow, that is the vector with the reactions' mass flow. 
 
-## Inside [main.py](../main.py)
+## Inside [main.py](../main/main.py)
 
 - `P = Support.Parameters("params.json).assign_params()` reads and sets the parameters from the `json` file
 - `mn = Support.bacteriaselector(P.Bacteria)` sets the bacteria 
