@@ -16,4 +16,4 @@ solve = Support.Select_Approach(P.Approach)
 r = solve(network=mn,k=P.K)
 
 
-Support.SaveResults(result=r,filename=P.Outfile)
+Support.SaveResults(result=r,filename=P.Outfile,metnet=mn)

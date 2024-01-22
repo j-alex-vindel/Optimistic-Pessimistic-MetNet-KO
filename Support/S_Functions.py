@@ -74,11 +74,11 @@ def SaveResults(result:object=None,filename:str=None,metnet:object=None):
         outfile.write(space)
         
         outfile.write(f'Chemical ({metnet.Rxn[metnet.chemical]}):  ')
-        outfile.writelines(str(result.Vs[metnet.chemical]))
+        outfile.writelines(str(round(result.Vs[metnet.chemical],4)))
         outfile.write(space)
 
         outfile.write(f'Biomass ({metnet.Rxn[metnet.biomass]}):  ')
-        outfile.writelines(str(result.Vs[metnet.biomass]))
+        outfile.writelines(str(round(result.Vs[metnet.biomass],4)))
         outfile.write(space)
 
         outfile.write("Binary_Vector: ")
