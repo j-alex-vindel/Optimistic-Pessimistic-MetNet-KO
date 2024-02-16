@@ -86,7 +86,7 @@ def A_Optimistic(network:M_Network=None,k:Ks=None,log:bool=True,speed:bool=False
                 knockset_inner = (i for i,y in enumerate(model._vi) if abs(model._vi[i]) < 1e-6 and i in network.KO)
                 ki = (i for i in combinations(knockset_inner,k))
                 
-                if model._pbnd - model._vi[network.chemical] >= -1e-6: 
+                if model._pbnd - vi_chem_val >= -1e-6: 
 
                     model.cbLazy(sum(model._varsy[j] for j in knockset) >= 1)
 
@@ -382,7 +382,5 @@ def A_Pessimistic(network:M_Network=None, k:Ks=None,log:bool=None,speed:bool=Fal
             vs = [2000 for i in network.M]
             del_strat_cb = ['all']
             soltype = 'Infeasible'
-        ko_index = [network.Rxn.index(i) for i in del_strat_cb]
         
-
         return Result(network.Name,del_strat_cb,ys,vs,vij,cb_time,soltype,'P')
