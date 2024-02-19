@@ -80,8 +80,25 @@ class Bacteria:
         self.b = np.array([0 for i in self.N])
         self.c = np.array([1 if i == self.biomass else 0 for i in self.M])
         self.tgt = .5
-        self.FBA = WT_FBA(self)
-        self.FVA = WT_FBA(self,wt=False,mt=True)
+        # self.FBA = WT_FBA(self)
+        # self.FVA = WT_FBA(self,wt=False,mt=True)
+
+   
+    @property
+    def biomass(self):
+        return self._biomass
+    @biomass.setter
+    def biomass(self,value:int):
+        self._FBA = None
+        self._biomass = value
+
+    @property
+    def chemical(self):
+        return self._chemical
+    @chemical.setter
+    def chemical(self,value:int):
+        self._FVA = None
+        self._chemical = value
 
     @property
     def tgt(self):
@@ -90,12 +107,26 @@ class Bacteria:
     def tgt(self,tgt:TGT=.5):
         self._minprod = None
         self._tgt = tgt
+    
+    @property
+    def FBA(self):
+        if self._FBA is None:
+            self._FBA = WT_FBA(self)
+        return self._FBA
+
+    @property
+    def FVA(self):
+        if self._FVA is None:
+            self._FVA = WT_FBA(self,wt=False,mt=True)
+        return self._FVA
+
     @property
     def minprod(self):
         if self._minprod is None:
             self._minprod = self._tgt*self.FBA[self.biomass]
         return self._minprod
     
+
 
 def WT_FBA(mn,wt:WT=True,mt:MT=False) -> FBA:
     LB_wt = copy.deepcopy(mn.LB)
